@@ -14,5 +14,6 @@ Pedidos.init(connection)
 Vendedores.init(connection)
 
 Pedidos.associate(connection.models)
+Clientes.associate(connection.models)
 
 module.exports = connection

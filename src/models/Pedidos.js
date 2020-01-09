@@ -12,6 +12,7 @@ class Pedidos extends Model{
     static associate(models){
         this.belongsTo(models.Vendedores,{foreignKey:'id_vendedor', as:'pertence_vendedor'})
         this.belongsTo(models.Clientes,{foreignKey: 'id_cliente', as:'pertence_cliente'})
+        this.belongsTo(models.Pagamentos, {foreignKey: 'id_pagamento', as: 'forma_pagamento'})
     }
 }
 
